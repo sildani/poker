@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="c02jv0uhdkq5.mustard.ipcoop.com" name="PokerTest" tests="12" time="0.107" timestamp="2014-07-03T22:22:33">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.STOREBOARDING_HOME" value="/opt/workspace/storeboarding" />
+    <property name="env.__CHECKFIX1436934" value="1" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.SECURITYSESSIONID" value="186a5" />
+    <property name="env.GREP_OPTIONS" value="--color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn" />
+    <property name="lib" value="/opt/projects/poker/lib" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/resources.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/rt.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/sunrsasign.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/jsse.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/jce.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/charsets.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/jfr.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/JObjC.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/classes" />
+    <property name="env.TMPDIR" value="/var/folders/18/xxx1k0ws0r99c5ydvz321s840000gn/T/" />
+    <property name="env.PWD" value="/opt/projects/poker" />
+    <property name="version.project" value="1.0" />
+    <property name="spec.pattern" value="**/*Spec.class" />
+    <property name="build.number" value="0" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="env.LESS" value="-R" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/opt/apache-ant/apache-ant-1.8.4" />
+    <property name="java.runtime.version" value="1.7.0_15-b03" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-i6iHOZ/Render" />
+    <property name="env.VP3TEST_HOME" value="/opt/workspace/vp3test" />
+    <property name="user.name" value="dsilva" />
+    <property name="env.TLABS_HOME" value="/opt/workspace/lamp2" />
+    <property name="env.USER" value="dsilva" />
+    <property name="env.SHELL" value="/usr/local/bin/zsh" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0:0" />
+    <property name="env.VP3TOOLS_HOME" value="/opt/workspace/vp3tools" />
+    <property name="env.PATH" value="/Users/dsilva/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/opt/grails/current/bin:/opt/groovy/current/bin:/opt/jvms/current/Contents/Home/bin:/opt/workspace/vp3test/bin:/opt/workspace/vp3deployment/bin:/opt/workspace/storeboarding/bin:/opt/workspace/toxic/bin:/opt/workspace/vp3tools/bin:/opt/workspace/vp3admin/bin:/opt/workspace/lamp2/bin:/opt/apache-ant/apache-ant-1.8.4/bin:/usr/local/heroku/bin:/Users/dsilva/.rbenv/shims:/Users/dsilva/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/opt/grails/current/bin:/opt/groovy/current/bin:/opt/jvms/current/Contents/Home/bin:/opt/workspace/vp3test/bin:/opt/workspace/vp3deployment/bin:/opt/workspace/storeboarding/bin:/opt/workspace/toxic/bin:/opt/workspace/vp3tools/bin:/opt/workspace/vp3admin/bin:/opt/workspace/lamp2/bin:/opt/apache-ant/apache-ant-1.8.4/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin" />
+    <property name="user.language" value="en" />
+    <property name="test.formatter" value="xml" />
+    <property name="sun.boot.library.path" value="/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="help" />
+    <property name="ant.project.name" value="poker" />
+    <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+    <property name="version.project.tmp" value="1.0" />
+    <property name="src-unit" value="/opt/projects/poker/test/unit" />
+    <property name="java.version" value="1.7.0_15" />
+    <property name="version" value="1.0.10358715f1447dfdf8bfdc4080d16d79d283000e&#xa;" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="test.pattern" value="**/*Test.class" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="version.file" value="/opt/projects/poker/VERSION" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.GROOVY_HOME" value="/opt/groovy/current" />
+    <property name="java.class.version" value="51.0" />
+    <property name="src" value="/opt/projects/poker/src" />
+    <property name="env.CLONE_HOME" value="/opt/workspace/clone" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/opt/jvms/jdk-1.7.0_15/Contents/Home/jre" />
+    <property name="env.ZSH" value="/Users/dsilva/.oh-my-zsh" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="dsilva" />
+    <property name="ant.file" value="/opt/projects/poker/build.xml" />
+    <property name="os.version" value="10.9.4" />
+    <property name="env.LOCAL_HOME" value="/usr/local" />
+    <property name="ant.file.type.poker" value="file" />
+    <property name="env.TERM_PROGRAM_VERSION" value="326" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="23.7-b01" />
+    <property name="ant.file.poker" value="/opt/projects/poker/build.xml" />
+    <property name="ant.library.dir" value="/opt/apache-ant/apache-ant-1.8.4/lib" />
+    <property name="package.version" value="1.0.10358715f1447dfdf8bfdc4080d16d79d283000e&#xa;" />
+    <property name="test.haltOnFailure" value="no" />
+    <property name="env.JAVA_HOME" value="/opt/jvms/current/Contents/Home" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="env.USE_SYSTEM_JRE" value="YesPlease" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.LSCOLORS" value="Gxfxcxdxbxegedabagacad" />
+    <property name="env.GREP_COLOR" value="1;32" />
+    <property name="env.TOXIC_HOME" value="/opt/workspace/toxic" />
+    <property name="user.home" value="/Users/dsilva" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="env.RBENV_HOME" value="/Users/dsilva/.rbenv" />
+    <property name="env.PAGER" value="less" />
+    <property name="java.library.path" value="/Users/dsilva/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="/opt/apache-ant/apache-ant-1.8.4/lib/ant-launcher.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-antlr.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-apache-bcel.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-apache-bsf.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-apache-log4j.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-apache-oro.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-apache-regexp.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-apache-resolver.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-apache-xalan2.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-commons-logging.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-commons-net.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-jai.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-javamail.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-jdepend.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-jmf.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-jsch.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-junit.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-junit4.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-launcher.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-netrexx.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-swing.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant-testutil.jar:/opt/apache-ant/apache-ant-1.8.4/lib/ant.jar:/opt/jvms/jdk-1.7.0_15/Contents/Home/lib/tools.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.4 compiled on May 22 2012" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  test" />
+    <property name="env.TERM_SESSION_ID" value="A1907B28-54A2-40C3-B8F7-5F1234D690A3" />
+    <property name="env.ANT_OPTS" value="-Xmx2048m -XX:PermSize=256m -XX:MaxPermSize=256m" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.RBENV_SHELL" value="zsh" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.HOME" value="/Users/dsilva" />
+    <property name="env.ANT_HOME" value="/opt/apache-ant/apache-ant-1.8.4" />
+    <property name="env.JAVA_MAIN_CLASS_15015" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="java.io.tmpdir" value="/var/folders/18/xxx1k0ws0r99c5ydvz321s840000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-qDLok1/Listeners" />
+    <property name="test.useFile" value="true" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="os.arch" value="x86_64" />
+    <property name="gen" value="/opt/projects/poker/gen" />
+    <property name="java.ext.dirs" value="/Users/dsilva/Library/Java/Extensions:/opt/jvms/jdk-1.7.0_15/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/opt/projects/poker" />
+    <property name="env.VP3ADMIN_HOME" value="/opt/workspace/vp3admin" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="revision.local" value="10358715f1447dfdf8bfdc4080d16d79d283000e&#xa;" />
+    <property name="env.VP3_DEPLOYMENT_HOME" value="/opt/workspace/vp3deployment" />
+    <property name="basedir" value="/opt/projects/poker" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="version.gen.file" value="/opt/projects/poker/gen/classes/poker.version" />
+    <property name="test.haltOnError" value="no" />
+    <property name="ant.core.lib" value="/opt/apache-ant/apache-ant-1.8.4/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.GRAILS_HOME" value="/opt/grails/current" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="env.VP3_HOME" value="/opt/workspace" />
+    <property name="env.RBENV_BIN" value="/Users/dsilva/.rbenv/shims" />
+  </properties>
+  <testcase classname="PokerTest" name="test_hand_value_ranking" time="0.009" />
+  <testcase classname="PokerTest" name="test_card_value_counts" time="0.012" />
+  <testcase classname="PokerTest" name="test_straight_detection" time="0.03" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_straight_flush" time="0.02" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_four_of_a_kind" time="0.009" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_full_house" time="0.003" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_flush" time="0.001" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_straight" time="0.001" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_three_of_a_kind" time="0.003" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_two_pairs" time="0.004" />
+  <testcase classname="PokerTest" name="should_evaluate_to_a_one_pair" time="0.003" />
+  <testcase classname="PokerTest" name="should_evaluate_to_only_high_card" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
