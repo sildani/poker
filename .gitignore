@@ -1,1 +1,4 @@
-gen/
+gen/build
+gen/classes
+gen/dist
+gen/unit
