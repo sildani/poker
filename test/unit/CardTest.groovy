@@ -61,4 +61,25 @@ class CardTest {
     assert cards[3] == c3
   }
 
+  @Test
+  void should_parse_card_from_string_representation() {
+    assert Card.getCard('2D') == new Card(Card.TWO, Card.DIAMONDS)
+  }
+
+  @Test
+  void should_provide_string_representation_from_card() {
+    assert new Card(Card.TWO, Card.CLUBS).toString()    == '2 of Clubs'
+    assert new Card(Card.TEN, Card.DIAMONDS).toString() == '10 of Diamonds'
+    assert new Card(Card.KING, Card.HEARTS).toString()  == 'King of Hearts'
+    assert new Card(Card.ACE, Card.SPADES).toString()   == 'Ace of Spades'
+  }
+
+  @Test
+  void should_provide_short_form_string_representation_from_card() {
+    assert new Card(Card.TWO, Card.CLUBS).shortForm()    == '2C'
+    assert new Card(Card.TEN, Card.DIAMONDS).shortForm() == '0D'
+    assert new Card(Card.KING, Card.HEARTS).shortForm()  == 'KH'
+    assert new Card(Card.ACE, Card.SPADES).shortForm()   == 'AS'
+  }
+
 }

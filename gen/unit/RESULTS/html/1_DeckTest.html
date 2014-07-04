@@ -1,13 +1,13 @@
 <html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Unit Test Results: PokerTest</title>
+<title>Unit Test Results: DeckTest</title>
 <link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css">
 <script type="text/javascript" language="JavaScript">
         var TestCases = new Array();
         var cur;
         
-    cur = TestCases['.PokerTest'] = new Array();
+    cur = TestCases['.DeckTest'] = new Array();
     
         cur['ant.core.lib'] = '/opt/apache-ant/apache-ant-1.8.4/lib/ant.jar';
     
@@ -47,7 +47,7 @@
     
         cur['env.ANT_OPTS'] = '-Xmx2048m -XX:PermSize=256m -XX:MaxPermSize=256m';
     
-        cur['env.Apple_PubSub_Socket_Render'] = '/tmp/launch-i6iHOZ/Render';
+        cur['env.Apple_PubSub_Socket_Render'] = '/tmp/launch-pWBhcM/Render';
     
         cur['env.CLONE_HOME'] = '/opt/workspace/clone';
     
@@ -63,7 +63,7 @@
     
         cur['env.JAVA_HOME'] = '/opt/jvms/current/Contents/Home';
     
-        cur['env.JAVA_MAIN_CLASS_15015'] = 'org.apache.tools.ant.launch.Launcher';
+        cur['env.JAVA_MAIN_CLASS_2570'] = 'org.apache.tools.ant.launch.Launcher';
     
         cur['env.LANG'] = 'en_US.UTF-8';
     
@@ -95,7 +95,7 @@
     
         cur['env.SHLVL'] = '1';
     
-        cur['env.SSH_AUTH_SOCK'] = '/tmp/launch-qDLok1/Listeners';
+        cur['env.SSH_AUTH_SOCK'] = '/tmp/launch-tA2V5I/Listeners';
     
         cur['env.STOREBOARDING_HOME'] = '/opt/workspace/storeboarding';
     
@@ -105,7 +105,7 @@
     
         cur['env.TERM_PROGRAM_VERSION'] = '326';
     
-        cur['env.TERM_SESSION_ID'] = 'A1907B28-54A2-40C3-B8F7-5F1234D690A3';
+        cur['env.TERM_SESSION_ID'] = '74B2241C-4775-4774-9E20-11D2F7859392';
     
         cur['env.TLABS_HOME'] = '/opt/workspace/lamp2';
     
@@ -203,11 +203,11 @@
     
         cur['os.version'] = '10.9.4';
     
-        cur['package.version'] = '1.0.10358715f1447dfdf8bfdc4080d16d79d283000e\n';
+        cur['package.version'] = '1.0.a440bfbc79f45bcc76741e8220633bbc2e65f5b6\n';
     
         cur['path.separator'] = ':';
     
-        cur['revision.local'] = '10358715f1447dfdf8bfdc4080d16d79d283000e\n';
+        cur['revision.local'] = 'a440bfbc79f45bcc76741e8220633bbc2e65f5b6\n';
     
         cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
     
@@ -261,7 +261,7 @@
     
         cur['user.timezone'] = '';
     
-        cur['version'] = '1.0.10358715f1447dfdf8bfdc4080d16d79d283000e\n';
+        cur['version'] = '1.0.a440bfbc79f45bcc76741e8220633bbc2e65f5b6\n';
     
         cur['version.file'] = '/opt/projects/poker/VERSION';
     
@@ -308,13 +308,13 @@
 </tr>
 </table>
 <hr size="1">
-<h3>Class PokerTest</h3>
+<h3>Class DeckTest</h3>
 <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
 <tr valign="top">
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
 <tr valign="top" class="Pass">
-<td><a title="Display all tests" href="1_PokerTest.html">PokerTest</a></td><td><a title="Display all tests" href="1_PokerTest.html">12</a></td><td>0</td><td>0</td><td>0.107</td><td>2014-07-03T22:22:33</td><td>c02jv0uhdkq5.mustard.ipcoop.com</td>
+<td><a title="Display all tests" href="1_DeckTest.html">DeckTest</a></td><td><a title="Display all tests" href="1_DeckTest.html">2</a></td><td>0</td><td>0</td><td>0.031</td><td>2014-07-04T20:49:35</td><td>C02JV0UHDKQ5.local</td>
 </tr>
 </table>
 <h2>Tests</h2>
@@ -323,44 +323,14 @@
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
 <tr valign="top" class="TableRowColor">
-<td><a name="test_hand_value_ranking"></a>test_hand_value_ranking</td><td>Success</td><td></td><td>0.009</td>
+<td><a name="test_get_card_from_deck"></a>test_get_card_from_deck</td><td>Success</td><td></td><td>0.026</td>
 </tr>
 <tr valign="top" class="TableRowColor">
-<td><a name="test_card_value_counts"></a>test_card_value_counts</td><td>Success</td><td></td><td>0.012</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="test_straight_detection"></a>test_straight_detection</td><td>Success</td><td></td><td>0.030</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_straight_flush"></a>should_evaluate_to_a_straight_flush</td><td>Success</td><td></td><td>0.020</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_four_of_a_kind"></a>should_evaluate_to_a_four_of_a_kind</td><td>Success</td><td></td><td>0.009</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_full_house"></a>should_evaluate_to_a_full_house</td><td>Success</td><td></td><td>0.003</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_flush"></a>should_evaluate_to_a_flush</td><td>Success</td><td></td><td>0.001</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_straight"></a>should_evaluate_to_a_straight</td><td>Success</td><td></td><td>0.001</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_three_of_a_kind"></a>should_evaluate_to_a_three_of_a_kind</td><td>Success</td><td></td><td>0.003</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_two_pairs"></a>should_evaluate_to_a_two_pairs</td><td>Success</td><td></td><td>0.004</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_a_one_pair"></a>should_evaluate_to_a_one_pair</td><td>Success</td><td></td><td>0.003</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="should_evaluate_to_only_high_card"></a>should_evaluate_to_only_high_card</td><td>Success</td><td></td><td>0.001</td>
+<td><a name="test_cannot_get_same_card_twice"></a>test_cannot_get_same_card_twice</td><td>Success</td><td></td><td>0.001</td>
 </tr>
 </table>
 <div class="Properties">
-<a href="javascript:displayProperties('.PokerTest');">
+<a href="javascript:displayProperties('.DeckTest');">
                     Properties &raquo;
                 </a>
 </div>

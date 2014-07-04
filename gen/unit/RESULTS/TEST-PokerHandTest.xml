@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="C02JV0UHDKQ5.local" name="PokerTest" tests="14" time="0.092" timestamp="2014-07-04T20:49:35">
+<testsuite errors="0" failures="0" hostname="C02JV0UHDKQ5.local" name="PokerHandTest" tests="3" time="0.029" timestamp="2014-07-04T20:49:35">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.STOREBOARDING_HOME" value="/opt/workspace/storeboarding" />
@@ -133,20 +133,9 @@
     <property name="env.VP3_HOME" value="/opt/workspace" />
     <property name="env.RBENV_BIN" value="/Users/dsilva/.rbenv/shims" />
   </properties>
-  <testcase classname="PokerTest" name="test_hand_value_ranking" time="0.01" />
-  <testcase classname="PokerTest" name="test_card_value_counts" time="0.004" />
-  <testcase classname="PokerTest" name="test_straight_detection" time="0.012" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_straight_flush" time="0.012" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_four_of_a_kind" time="0.009" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_full_house" time="0.003" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_flush" time="0.001" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_straight" time="0.001" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_three_of_a_kind" time="0.003" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_two_pairs" time="0.004" />
-  <testcase classname="PokerTest" name="should_evaluate_to_a_one_pair" time="0.003" />
-  <testcase classname="PokerTest" name="should_evaluate_to_only_high_card" time="0.001" />
-  <testcase classname="PokerTest" name="should_parse_scoring_hand_string_by_scoring_hand" time="0.001" />
-  <testcase classname="PokerTest" name="should_select_correct_winner" time="0.016" />
+  <testcase classname="PokerHandTest" name="should_construct_with_card_instances" time="0.014" />
+  <testcase classname="PokerHandTest" name="should_pretty_print_to_string" time="0.008" />
+  <testcase classname="PokerHandTest" name="should_construct_with_string" time="0.003" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
