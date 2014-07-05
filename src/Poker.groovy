@@ -43,7 +43,7 @@ class Poker {
     if (whiteResult[0] < blackResult[0]) {
       result << "Black wins - ${scoringHand[blackResult[0]]}"
     }
-    
+
     if (whiteResult[0] == blackResult[0] && whiteResult[1].value > blackResult[1].value) {
       result << "White wins - High card: ${whiteResult[1]}"
     }
@@ -53,11 +53,10 @@ class Poker {
     }
 
     if (whiteResult[0] == blackResult[0] && whiteResult[1].value == blackResult[1].value) {
-      if (whiteResult[2].value > blackResult[2].value) {
-        result << "White wins - High card: ${whiteResult[2]}"
-      } else
-      if (whiteResult[2].value < blackResult[2].value) {
-        result << "Black wins - High card: ${blackResult[2]}"
+      def tieBreakerResult = tieBreaker(blackHand, whiteHand)
+      if (tieBreakerResult) {
+        if (tieBreakerResult[0] == whiteHand) result << "White wins - High card: ${tieBreakerResult[1]}"
+        if (tieBreakerResult[0] == blackHand) result << "Black wins - High card: ${tieBreakerResult[1]}"
       } else {
         result << "Tie"
       }
@@ -122,7 +121,7 @@ class Poker {
       return [Poker.PAIR, evaluatedCards.findAll { it.value == highCardVal }.first()]
     }
 
-    return [null, evaluatedCards[4], evaluatedCards[3]]
+    return [null, evaluatedCards[4]]
   }
 
   def count(runningCount, card) {
@@ -144,5 +143,22 @@ class Poker {
       lastValue = value
     }
     deltas.sum().abs() == 4
+  }
+
+  def tieBreaker(hand1, hand2) {
+    def hand1Cards = hand1.cards.sort().reverse()
+    def handValues1 = hand1Cards.collect { it.value }
+
+    def hand2Cards = hand2.cards.sort().reverse()
+    def handValues2 = hand2.cards.sort().reverse().collect { it.value }
+
+    def i = 0
+    while (i < 5) {
+      if (handValues1[i] > handValues2[i]) return [hand1, hand1Cards[i]]
+      if (handValues1[i] < handValues2[i]) return [hand2, hand2Cards[i]]
+      i++
+    }
+
+    return null
   }
 }

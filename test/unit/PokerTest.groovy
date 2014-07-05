@@ -159,7 +159,7 @@ class PokerTest {
         new Card(Card.JACK,  Card.SPADES),
         new Card(Card.NINE,  Card.DIAMONDS),
         new Card(Card.ACE,   Card.CLUBS)
-      ])) == [null, new Card(Card.ACE, Card.CLUBS), new Card(Card.JACK, Card.SPADES)]
+      ])) == [null, new Card(Card.ACE, Card.CLUBS)]
   }
 
   @Test
@@ -199,6 +199,36 @@ class PokerTest {
 
   def evalGame(hand1, hand2) {
     return poker.evaluateGame(hand1, hand2) 
+  }
+
+  @Test
+  void should_properly_pick_tie_breaker_value() {
+    def hand1
+    def hand2
+
+    hand1 = new PokerHand('AC 3D 4H 5S 6C')
+    hand2 = new PokerHand('KD 3H 4S 5C 6D')
+    assert poker.tieBreaker(hand1,hand2) == [hand1, new Card('AC')]
+
+    hand1 = new PokerHand('AC KD 4H 5S 6C')
+    hand2 = new PokerHand('AD QH 4S 5C 6D')
+    assert poker.tieBreaker(hand1,hand2) == [hand1, new Card('KD')]
+
+    hand1 = new PokerHand('AC KD JH 5S 6C')
+    hand2 = new PokerHand('AD KH QS 5C 6D')
+    assert poker.tieBreaker(hand1,hand2) == [hand2, new Card('QS')]
+
+    hand1 = new PokerHand('AC KD QH 9S 6C')
+    hand2 = new PokerHand('AD KH QS 0C 6D')
+    assert poker.tieBreaker(hand1,hand2) == [hand2, new Card('0C')]
+
+    hand1 = new PokerHand('AC KD QH 9S 8C')
+    hand2 = new PokerHand('AD KH QS 9C 7D')
+    assert poker.tieBreaker(hand1,hand2) == [hand1, new Card('8C')]
+
+    hand1 = new PokerHand('AC KD QH 9S 8C')
+    hand2 = new PokerHand('AD KH QS 9C 8D')
+    assert poker.tieBreaker(hand1,hand2) == null
   }
 
 }
