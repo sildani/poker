@@ -44,20 +44,21 @@
     <delete dir="${gen}" />
   </target>
 
-  <target name="git-version">
-    <touch file="${version.gen.file}" mkdirs="true" />
-    <loadfile property="version.project.tmp" srcFile="${version.file}" />
-    <echo file="${version.gen.file}">${version.project.tmp}</echo>
+  <target name="git-version" depends="clean">
+    <copy file="${version.file}" toFile="${version.gen.file}" />
     <replaceregexp file="${version.gen.file}" match="\n" replace="" />
     <loadfile property="version.project" srcFile="${version.gen.file}" />
-    <loadfile property="revision.local" srcFile=".git/refs/heads/master" />
-    <echo file="${version.gen.file}">${revision.global.tmp}</echo>
+
+    <copy file=".git/refs/heads/master" toFile="${version.gen.file}" overwrite="true" />
     <replaceregexp file="${version.gen.file}" match="\n" replace="" />
     <loadfile property="revision.local" srcFile="${version.gen.file}" />
+
     <property name="version" value="${version.project}.${revision.local}" />
+    <property name="package.version" value="${version.project}.${revision.local}" />
+
     <echo file="${version.gen.file}">${version}</echo>
     <copy file="${version.gen.file}" toDir="${gen}/build" />
-    <property name="package.version" value="${version.project}.${revision.local}" />
+
     <echo message="Package version: ${package.version}" />
     <echo message="Build version: ${version}" />
   </target>
