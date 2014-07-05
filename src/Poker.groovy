@@ -22,6 +22,15 @@ class Poker {
     (Poker.STRAIGHT_FLUSH):  'Straight flush'
   ]
 
+  static void main(String[] args) {
+    /*
+    Input: Black: 2H 3D 5S 9C KD White: 2C 3H 4S 8C AH
+    Output: White wins - high card: Ace
+     */
+    println "Input: Black: ${args[0]} White: ${args[1]}"
+    println "Output: ${evaluateGame(args[0], args[1])}"
+  }
+
   // game evaluator
   def evaluateGame(blackHand, whiteHand) {
     StringBuilder result = new StringBuilder()
