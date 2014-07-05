@@ -23,12 +23,10 @@ class Poker {
   ]
 
   static void main(String[] args) {
-    /*
-    Input: Black: 2H 3D 5S 9C KD White: 2C 3H 4S 8C AH
-    Output: White wins - high card: Ace
-     */
-    println "Input: Black: ${args[0]} White: ${args[1]}"
-    println "Output: ${evaluateGame(args[0], args[1])}"
+    def blackHand = new PokerHand(args[0])
+    def whiteHand = new PokerHand(args[1])
+    println "Input: Black: ${blackHand} White: ${whiteHand}"
+    println "Output: ${new Poker().evaluateGame(blackHand, whiteHand)}"
   }
 
   // game evaluator
