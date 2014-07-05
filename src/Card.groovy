@@ -113,6 +113,12 @@ class Card implements Comparable<Card> {
     this.suit = suit
   }
 
+  public Card(cardAsString) {
+    def card = Card.cards[cardAsString]
+    this.value = card.value
+    this.suit = card.suit
+  }
+
   int compareTo(Card other) {
     def i = Integer.compare(this.value, other.value)
     if (i != 0) {

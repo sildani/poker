@@ -82,4 +82,12 @@ class CardTest {
     assert new Card(Card.ACE, Card.SPADES).shortForm()   == 'AS'
   }
 
+  @Test
+  void should_support_string_contructor() {
+    assert new Card('2C') == new Card(Card.TWO, Card.CLUBS)
+    assert new Card('0D') == new Card(Card.TEN, Card.DIAMONDS)
+    assert new Card('KH') == new Card(Card.KING, Card.HEARTS)
+    assert new Card('AS') == new Card(Card.ACE, Card.SPADES)
+  }
+
 }
