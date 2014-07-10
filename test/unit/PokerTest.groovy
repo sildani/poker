@@ -37,6 +37,7 @@ class PokerTest {
     assert poker.isStraight([1,2,3,4,5]) == true
     assert poker.isStraight([1,2,5,4,3]) == true
     assert poker.isStraight([1,2,5,6,9]) == false
+    assert poker.isStraight([2,3,4,6,6]) == false
   }
 
   @Test
@@ -195,6 +196,11 @@ class PokerTest {
     assert evalGame(
       new PokerHand('2H 3D 5S 9C KD'),
       new PokerHand('2D 3H 5C 9S KH')) == 'Tie'
+
+    // white wins with a pair
+    assert evalGame(
+      new PokerHand('AH 2C 3H 4D 5S'),
+      new PokerHand('2H 3D 4S 6H 6D')) == 'White wins - Pair'
   }
 
   def evalGame(hand1, hand2) {

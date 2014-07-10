@@ -134,15 +134,15 @@ class Poker {
   }
 
   def isStraight(values) {
-    def deltas = []
+    def isStraight = true
     def lastValue = null
     values.sort().each { value ->
-      if (lastValue) {
-        deltas << value - lastValue
+      if (lastValue && isStraight) {
+        isStraight = (value - lastValue == 1)
       }
       lastValue = value
     }
-    deltas.sum().abs() == 4
+    isStraight
   }
 
   def tieBreaker(hand1, hand2) {
